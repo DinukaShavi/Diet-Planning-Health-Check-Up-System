@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
+
+:root{
+    --main-color:#29d978;
+    --primary:#f0fff7;
+    --black:#141414;
+    --white:#fff;
+    --bg: #f2f2f2;
+    --light-black:#666;
+ }
+ 
+ .navcontainer{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none; text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+ 
+ .navcontainer html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+ }
+ 
+ html::-webkit-scrollbar{
+   width: 10px;
+ }
+ 
+ html::-webkit-scrollbar-track{
+   background: var(--white);
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+   background: var(--main-color);
+ }
+ 
+ .navbar {
+   height: 35px !important;
+ }
+ 
+ .navbtn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   border: .1rem solid var(--main-color);
+   border-radius: 1rem solid;
+   cursor: pointer;
+   font-size: 1.7rem;
+   color: var(--main-color);
+ }
+ 
+ .btn:hover{
+   background: var(--main-color);
+   color: var(--white);
+ }
+ 
+ .btn:hover{
+   background: var(--main-color);
+   color: var(--white);
+ }
+ 
+  /* header */
+  
+  .btn-primary {
+   background-color: var(--main-color);;
+   color: hsl(120, 4%, 95%);
+   font-size: 1.4rem;
+   margin: 0;
+   font-weight: 600;
+   max-width: max-content;
+   padding: 8px 20px;
+   border-radius: 50px;
+   transition: 0.25s ease;
+ }
+ 
+ .btn-primary:hover,
+ .btn-primary:focus {
+   background-color: hsl(0, 0%, 100%);
+ }
+ 
+  .header{
+     position: fixed;
+     top: 0; left: 0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem 9%;
+     background: var(--primary);
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  }
+ 
+  .header .logo{
+   font-size: 1.5rem;
+   font-weight: bolder;
+   color: var(--main-color);
+   text-decoration: none;
+ }
+ 
+ .header .navbar a{
+   font-size: 1.2rem;
+   margin-left: 2rem;
+   color: var(--black);
+   text-decoration: none;
+ }
+ 
+ .header .navbar a:hover{
+   color: var(--main-color);
+ }
+ 
+ #menu{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: var(--main-color);
+   display: none;
+ }
+/*nav bar ends*/ 
+
+
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+} 
+
+body {
+	font-family: 'Poppins',sans-serif;
+	background-color: #f0fff7;
+	color: white;
+	background-image: url('herbs.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat ;
+  }
+
+h1,
+h3 { 
+	color: rgb(0, 0, 0);
+} 
+
+.app-content{
+	margin-top: 120px;
+}
+
+.app {
+	margin-top: 120px; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	width: 650px; 
+	margin: 1rem auto; 
+	padding: 10px; 
+	gap: 20px; 
+} 
+
+.inputs { 
+	width: 100%; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	gap: 20px; 
+	height: fit-content; 
+	color: #000000;
+} 
+
+.inputs>div { 
+	height: 100%; 
+	display: flex; 
+	justify-content: space-between; 
+	flex-direction: column; 
+} 
+
+label { 
+	font-size: 0.9rem; 
+} 
+
+input, 
+label { 
+	display: block; 
+} 
+
+input { 
+	margin-top: 8px; 
+	margin-bottom: 5px; 
+	padding: 10px; 
+	font-size: large; 
+	background-color: #c2c1c1; 
+	color: rgb(0, 0, 0); 
+	border: 1px solid black; 
+	border-radius: 5px; 
+	width: 100%; 
+} 
+
+input:focus { 
+	outline: none; 
+} 
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+} 
+
+button{ display: block; cursor: pointer; border: none; } 
+
+#submit {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #62bd5e; 
+	font-size: 1.3rem;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	transition: scale 0.3s ease-in-out;
+}
+
+#submit:hover {
+	background-color: #000000; 
+}
+
+
+#editSection{ 
+	width: 100%; 
+	display: flex; 
+	gap: 25px; 
+	justify-content: space-between; 
+} 
+
+#editSection > button { 
+	width: 100%; 
+	padding: 10px; 
+	margin-bottom: 10px; 
+	font-size: 1.3rem; 
+	border-radius: 5px; 
+	color: white; 
+	font-weight: bold; 
+	transition: scale 0.3s ease-in-out; 
+} 
+
+#updateEntry {background-color: #62bd5e; } 
+
+#cancelEdit{ background-color: #62bd5e; } 
+
+#submit:hover, #updateEntry:hover, #cancelEdit:hover { scale: 1.02; } 
+
+.hidden{ display: none !important; } 
+
+.edit, .delete{ 
+	margin: 0 auto; 
+	padding: 5px 10px; 
+	font-size: 1.1rem; 
+	border-radius: 5px; 
+	background-color: transparent; 
+	color: white; 
+	border: 1px solid white; 
+} 
+
+.edit:hover, .delete:hover{ 
+	background-color: #0a0a0a; 
+} 
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	position: relative; 
+	overflow: hidden; 
+} 
+
+tr{
+	border: 1px solid black;
+	background-color: #f0fff7;
+}
+
+th, 
+td { 
+	text-align: center; 
+	padding: 10px; 
+	border: 0; 
+} 
+
+td{
+	color: #000000;
+}
+
+th { 
+	font-size: 0.9rem; 
+	background-color: #62bd5e;; 
+} 
+
+tbody > tr:hover{ 
+	background-color: #737373; 
+	color: black; 
+} 
+
+.delete-animation{ 
+	background-color: #ef4444 !important; 
+	animation: deleteAnimate 0.4s linear forwards; 
+} 
+
+@keyframes deleteAnimation {
+  0% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+}
+
+.delete-animation {
+  animation: deleteAnimation 0.5s ease;
+}
+
+/*nav bar media*/
+
+@media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+  
+  @media(max-width:991px){
+  
+    .navcontainer html{
+       font-size: 55%;
+    }
+  
+    .header{
+       padding: 2rem 3rem;
+    }
+  
+  
+  }
+  
+  @media(max-width:768px){
+  
+    #menu{
+       display: inline-block;
+    }
+  
+    .header .navbar{
+       position: absolute;
+       top: 99%; left: 0; right: 0;
+       background: var(--primary);
+       border-top: .1rem solid #aaa;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    .header .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    .header .navbar a{
+       display: block;
+       margin: 2rem;
+       color: var(--light-black);
+    }
+  
+  }

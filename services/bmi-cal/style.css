@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+
+:root {
+    --main-color: #29d978;
+    --primary: #f0fff7;
+    --black: #141414;
+    --white: #fff;
+    --bg: #f2f2f2;
+    --light-black: #666;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border: .1rem solid var(--main-color);
+    border-radius: 1rem solid;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+/* header */
+
+.btn-primary {
+    background-color: var(--main-color);
+    ;
+    color: hsl(120, 4%, 95%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    max-width: max-content;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.25s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+    display: none;
+}
+
+
+/*nav bar ends*/
+
+#Result{
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+}
+
+.form-control {
+    height: 50px;
+    color: #62bd5e;
+    border: 1px solid #ebebeb;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.container {
+    width: 540px;
+    padding-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 30px;
+}
+
+.back-img {
+    background-image: url('table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*calculate*/
+
+.calculate-form {
+    background-color: #62bd5e;
+    padding: 30px;
+}
+
+.form-control {
+    border: none;
+}
+
+.form-group{
+    font-size: 16px;
+}
+
+.form-group label {
+    padding-top: 8px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.default-btn {
+    margin-top: 20px;
+    color: #ebebeb;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: "Open Sans", "Sans-serif";
+}
+
+.default-btn:hover {
+    background-color: #ffffff;
+    color: #1b1b1b;
+    transition-duration: 500ms;
+}
+
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 3rem;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    #menu {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: var(--primary);
+        border-top: .1rem solid #aaa;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        color: var(--light-black);
+    }
+
+}

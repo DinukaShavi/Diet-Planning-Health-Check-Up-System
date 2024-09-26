@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root{
+   --main-color:#29d978;
+   --primary:#f0fff7;
+   --black:#141414;
+   --white:#fff;
+   --bg: #f2f2f2;
+   --light-black:#666;
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none; text-decoration: none;
+   text-transform: capitalize;
+   transition: .2s linear;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+   width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+   background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+   background: var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border: .1rem solid var(--main-color);
+    border-radius: 1rem solid;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--main-color);
+ }
+ 
+ .btn:hover{
+    background: var(--main-color);
+    color: var(--white);
+ }
+
+ .btn:hover{
+    background: var(--main-color);
+    color: var(--white);
+ }
+ 
+ /* header */
+ 
+ .btn-primary {
+    background-color: var(--main-color);;
+    color: hsl(120, 4%, 95%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    max-width: max-content;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.25s ease;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+ 
+ .header{
+    position: fixed;
+    top: 0; left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+ }
+ 
+ .header .logo{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+ }
+ 
+ .header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--black);
+ }
+ 
+ .header .navbar a:hover{
+    color: var(--main-color);
+ }
+ 
+ #menu{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+    display: none;
+ }
+/*nav bar end*/
+
+.form-control {
+    height: 50px;
+    color: black;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.padtop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Add appointment Btn Area Style */
+
+.default-btn {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    text-align: center;
+    background-color: #62bd5e;
+    display: inline-table;
+    padding: 15px 40px;
+    border-radius: 4px;
+}
+
+.default-btn:hover {
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* Make an Appointment */
+
+.appointment-area {
+    background-image: url(appointment-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appointment-action {
+    max-width: 560px;
+    margin-left: 40px;
+}
+
+.appointment-action h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.appointment-action .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.appointment-action .form-group .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.appointment-action .form-group .form-control {
+    background-color: #ececec;
+    border-radius: 0;
+}
+
+.appointment-action .form-group.datetime {
+   font-size: 16px;
+   margin-left: 10px;
+}
+
+.form-group select {
+   height: 50px;
+   color: #62bd5e;
+   border: 1px solid #ebebeb;
+   background-color: #ececec;
+   border-radius: 0;
+   font-size: 16px;
+   padding: 5px 10px;
+   width: 100%;
+   margin-bottom: 5px;
+}
+
+
+/* media query */
+
+@media(max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .header{
+      padding: 2rem 3rem;
+   }
+
+   section{
+      padding: 3rem 5rem;
+   }
+
+}
+
+@media(max-width:768px){
+
+   #menu{
+      display: inline-block;
+   }
+
+   .header .navbar{
+      position: absolute;
+      top: 99%; left: 0; right: 0;
+      background: var(--primary);
+      border-top: .1rem solid #aaa;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .navbar a{
+      display: block;
+      margin: 2rem;
+      color: var(--light-black);
+   }
+
+}
+
+@media(max-width:500px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .newsletter .content{
+      max-width: 100%;
+   }
+
+}
+

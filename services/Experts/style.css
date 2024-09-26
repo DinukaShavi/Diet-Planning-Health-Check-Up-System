@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root{
+   --main-color:#29d978;
+   --primary:#f0fff7;
+   --black:#141414;
+   --white:#fff;
+   --bg: #f2f2f2;
+   --light-black:#666;
+}
+
+.navcontainer{
+   font-family: 'Poppins', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none; text-decoration: none;
+   text-transform: capitalize;
+   transition: .2s linear;
+}
+
+.navcontainer html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+  background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+}
+
+.navbar {
+  height: 35px !important;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: .1rem solid var(--main-color);
+  border-radius: 1rem solid;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: var(--main-color);
+}
+
+.btn:hover{
+  background: var(--main-color);
+  color: var(--white);
+}
+
+.btn:hover{
+  background: var(--main-color);
+  color: var(--white);
+}
+
+ /* header */
+ 
+ .btn-primary {
+  background-color: var(--main-color);;
+  color: hsl(120, 4%, 95%);
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+  max-width: max-content;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: hsl(0, 0%, 100%);
+}
+
+ .header{
+    position: fixed;
+    top: 0; left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+ }
+
+ .header .logo{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.header .navbar a{
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.header .navbar a:hover{
+  color: var(--main-color);
+}
+
+#menu{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--main-color);
+  display: none;
+}
+
+/*nav bar ends*/
+
+.experts {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+body {
+  background-color: #f5f5f5;
+}
+.row1 {
+  border:1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px 30px;
+  margin-top: 60px;
+  margin-bottom: 2px;
+  text-align: center;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px 1em;
+  text-align: center;
+  margin: 1px ;
+
+}
+.column-4 {
+  width: 20%;
+  height: 30%;
+  padding: 0.5em 0;
+  margin-left: 4%;
+
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #2aee0b;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#3fe711, #8567f7);
+  color: #ffffff;
+   
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+
+@media(max-width:991px){
+
+  html{
+     font-size: 55%;
+  }
+
+  .header{
+     padding: 2rem 3rem;
+  }
+
+
+}
+
+@media(max-width:768px){
+
+  #menu{
+     display: inline-block;
+  }
+
+  .header .navbar{
+     position: absolute;
+     top: 99%; left: 0; right: 0;
+     background: var(--primary);
+     border-top: .1rem solid #aaa;
+     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a{
+     display: block;
+     margin: 2rem;
+     color: var(--light-black);
+  }
+
+}
